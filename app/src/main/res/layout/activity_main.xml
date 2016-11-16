@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+   >
+    <com.donkor.demo.BatteryView
+        android:id="@+id/horizontalBattery"
+        android:layout_width="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:gravity="center"
+        app:batteryPower="70"
+        app:batteryColor="@android:color/black"
+        app:batteryOrientation="horizontal"
+        />
+    <com.donkor.demo.BatteryView
+        android:id="@+id/verticalBattery"
+        android:layout_width="14dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:gravity="center"
+        app:batteryOrientation="vertical"
+        />
+</LinearLayout>
